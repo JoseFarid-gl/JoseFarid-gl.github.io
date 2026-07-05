@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jose Farid Guerrero Libien — Scrum Master · SAFe Scrum Master · Project & Delivery Manager</title>
+<meta name="description" content="Certified Scrum Master and AI-Empowered SAFe 6 Scrum Master, Project and Delivery Manager with 10+ years in Banking, Insurance and Telecommunications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#122B33;          /* deep petrol ink */
+  --ink-soft:#3E5A63;
+  --paper:#F5F6F3;        /* cool boardroom paper */
+  --card:#FFFFFF;
+  --line:#D8DDD6;
+  --accent:#0E7C66;       /* delivery green */
+  --amber:#C77E1E;        /* in-progress amber */
+  --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Archivo',sans-serif}
+a{color:var(--accent)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+
+/* nav */
+nav{position:sticky;top:0;background:rgba(245,246,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav .brand{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{color:var(--ink-soft);text-decoration:none;font-size:14px}
+nav ul a:hover{color:var(--accent)}
+@media(max-width:640px){nav ul{display:none}}
+
+/* hero */
+header{padding:88px 0 64px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--accent);margin-bottom:18px}
+h1{font-size:clamp(38px,6vw,64px);font-weight:750;line-height:1.04;letter-spacing:-.02em;font-stretch:105%}
+h1 .thin{color:var(--ink-soft);font-weight:450}
+.lede{max-width:640px;margin-top:22px;font-size:18px;color:var(--ink-soft)}
+.hero-cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:600;font-size:15px}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-solid:hover{background:var(--accent)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* metrics strip */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:56px 0 0}
+.metric{background:var(--card);padding:22px 20px}
+.metric b{display:block;font-family:'Archivo';font-size:32px;font-weight:750;letter-spacing:-.02em}
+.metric span{font-size:13px;color:var(--ink-soft)}
+@media(max-width:720px){.metrics{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(24px,3.4vw,34px);font-weight:700;letter-spacing:-.01em}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+@media(max-width:760px){.about-grid{grid-template-columns:1fr}}
+.about p{margin-bottom:16px;color:var(--ink-soft)}
+.about p strong{color:var(--ink)}
+.facts{background:var(--card);border:1px solid var(--line);padding:24px}
+.facts dt{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-top:16px}
+.facts dt:first-child{margin-top:0}
+.facts dd{font-size:15px}
+
+/* experience — release log */
+.job{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);padding:26px 28px;margin-bottom:18px}
+.job.current{border-left-color:var(--amber)}
+.job-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.job h3{font-size:19px;font-weight:700}
+.job .client{color:var(--ink-soft);font-size:15px;margin-bottom:12px}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:4px 10px;border-radius:3px;background:#E7F1EC;color:var(--accent);white-space:nowrap;align-self:flex-start}
+.job.current .chip{background:#F7ECD9;color:var(--amber)}
+.job p{font-size:15px;color:var(--ink-soft);margin-bottom:12px}
+.job ul{list-style:none;font-size:14.5px}
+.job ul li{padding-left:18px;position:relative;margin-bottom:6px;color:var(--ink)}
+.job ul li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+
+/* skills */
+.skill-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:760px){.skill-cols{grid-template-columns:1fr}}
+.skill-card{background:var(--card);border:1px solid var(--line);padding:22px}
+.skill-card h3{font-size:15px;margin-bottom:14px;color:var(--accent);font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:13px;border:1px solid var(--line);padding:4px 10px;border-radius:3px;background:var(--paper)}
+
+/* certs */
+.cert-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:14.5px}
+.cert-table th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+.cert-table td{padding:11px 16px;border-bottom:1px solid var(--line)}
+.cert-table tr:last-child td{border-bottom:none}
+@media(max-width:640px){.cert-table td:nth-child(2),.cert-table th:nth-child(2){display:none}}
+
+/* contact */
+.contact{background:var(--ink);color:#EDF1EE;border-bottom:none}
+.contact h2{color:#fff}
+.contact p{color:#B9C7C4;max-width:560px;margin-bottom:26px}
+.contact a.big{color:#fff;font-family:'Archivo';font-size:clamp(20px,3.4vw,30px);font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent)}
+.contact a.big:hover{color:#8FE0C8}
+.contact .meta{margin-top:26px;font-size:15px;color:#B9C7C4}
+footer{background:var(--ink);color:#6E8580;padding:24px 0;font-size:13px;border-top:1px solid #244149}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top">JF · GUERRERO LIBIEN</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header id="top"><div class="wrap">
+  <div class="eyebrow mono">Scrum Master · SAFe Scrum Master · Project &amp; Delivery Manager</div>
+  <h1>Jose Farid Guerrero Libien<br><span class="thin">I turn complex programs into delivered releases.</span></h1>
+  <p class="lede">Certified Scrum Master and AI-Empowered SAFe 6 Scrum Master, with 10+ years also serving as Project, Delivery and Release &amp; Change Manager across Banking, Insurance and Telecommunications — for clients including Citi, Chubb, Inbursa and Telmex.</p>
+  <div class="hero-cta">
+    <a class="btn btn-solid" href="#experience">See my work</a>
+    <a class="btn btn-ghost" href="mailto:jglibien@live.com">Get in touch</a>
+  </div>
+  <div class="metrics">
+    <div class="metric"><b>10+</b><span>Years in project &amp; delivery management</span></div>
+    <div class="metric"><b>80%</b><span>Cut in regulatory report prep time (RR-7 automation)</span></div>
+    <div class="metric"><b>0</b><span>Regulatory findings across 3 consecutive quarters</span></div>
+    <div class="metric"><b>8</b><span>Enterprise programs delivered for tier-1 clients</span></div>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <div class="sec-head"><span class="mono" style="color:var(--accent)">01</span><h2>About</h2></div>
+  <div class="about-grid">
+    <div class="about">
+      <p>I'm a certified IT delivery professional and <strong>servant leader</strong> who has spent the last decade at the intersection of <strong>Agile execution and enterprise governance</strong> — facilitating the flow of work for Scrum teams, coordinating cross-functional programs, and managing releases through CAB approvals in highly regulated environments.</p>
+      <p>My work spans <strong>bank divestitures, fraud prevention platforms, regulatory reporting automation, and large-scale system migrations</strong>. I coach teams through Agile maturity using Scrum, Kanban and SAFe, facilitate every Scrum event, and support other teams across the SAFe Agile Release Train (ART). I rely on <strong>information radiators — metrics and dashboards</strong> — to give teams visibility, remove bottlenecks and impediments early, and help them make better decisions that lead to better results. Strong communication and problem-solving let me engage everyone from developers to executive sponsors, and I promote continuous improvement in every sprint.</p>
+      <p>I'm currently pursuing a <strong>Master of Science in Artificial Intelligence</strong> at the University of Colorado Boulder, and hold AI-Empowered SAFe 6 Scrum Master certification — combining proven delivery discipline with an AI-forward toolkit, including Anthropic's Claude Code training for project managers.</p>
+    </div>
+    <dl class="facts">
+      <dt>Based in</dt><dd>Mexico (open to remote / hybrid)</dd>
+      <dt>Languages</dt><dd>English (C1) · Spanish (native)</dd>
+      <dt>Education</dt><dd>MSc Artificial Intelligence — CU Boulder (in progress)<br>B.Eng. Mechanical Engineering — Univ. of Guanajuato<br>Diploma in Telecommunications — INTTELMEX</dd>
+      <dt>Domains</dt><dd>Banking · Insurance · Telecommunications</dd>
+    </dl>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="sec-head"><span class="mono" style="color:var(--accent)">02</span><h2>Experience — release log</h2></div>
+
+  <div class="job current">
+    <div class="job-top"><h3>Delivery Manager — RR-7 Automation for CNSF Compliance</h3><span class="chip">In progress · Apr 2025 — Present</span></div>
+    <div class="client">Inbursa Seguros · Mexico City</div>
+    <p>Automation of the quarterly RR-7 regulatory report to Mexico's National Insurance and Bonding Commission, covering financials, investments, claims and capital.</p>
+    <ul>
+      <li>Cut RR-7 preparation time by 80% through automation and early validation</li>
+      <li>Delivered three consecutive quarters with zero regulatory findings</li>
+      <li>Deployed executive dashboards for traceability, compliance tracking and delivery control</li>
+      <li>Coordinated IT, Actuarial and Business teams; managed sprints, releases and CAB workflows in Jira and ServiceNow</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>SAFe Scrum Master — AFORE Platform Migration</h3><span class="chip">Shipped · Jul 2024 — Mar 2025</span></div>
+    <div class="client">Citi Banamex · Mexico City</div>
+    <p>Client migration to the new AFORE technological platform following the CitiBanamex bank separation, across Voluntary Contributions, Withdrawals, Account Unification (IMSS/ISSSTE) and more.</p>
+    <ul>
+      <li>Led full Scrum cadence: planning, dailies, reviews and retrospectives across dev, QA and business teams</li>
+      <li>Configured custom Jira workflows and dashboards, improving visibility of velocity, burndown and release progress</li>
+      <li>Drove backlog refinement with PO and BA, enforcing DoR/DoD to protect delivery quality</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>PM Coordinator / Release &amp; Change Manager — Citi–Banamex Divestiture</h3><span class="chip">Shipped · Jan 2023 — Jun 2024</span></div>
+    <div class="client">Citi Group · Mexico City</div>
+    <p>Migration of Tandem platform applications and infrastructure (DEV, UAT, Production, COB) for the newly separated bank, under strict SLA/KPI compliance.</p>
+    <ul>
+      <li>Oversaw environment transitions, data segregation and freeze-period monitoring for a bank-scale migration</li>
+      <li>Managed GitHub-based release versioning, branching strategy and CAB approvals with risk assessments</li>
+      <li>Coordinated defect management in Jira/ALM and post-implementation monitoring of migrated applications</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>SAFe Scrum Master / Release Manager — Fraud Prevention (ThreatMetrix)</h3><span class="chip">Shipped · Nov 2022 — Dec 2023</span></div>
+    <div class="client">Citi Group · Mexico City</div>
+    <p>Detection of high-risk transactions to prevent fraud and money laundering, interconnecting banking channels, APIs and device-intelligence systems.</p>
+    <ul>
+      <li>Aligned Anti-Fraud, Personal and Business banking channel teams around a shared prioritized backlog</li>
+      <li>Coordinated QA validation across UAT, Gamma and Omega environments and led CAB change approvals</li>
+      <li>Analyzed post-release transaction data to tune fraud risk alerts</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>Agile Delivery Manager / PM / Release Manager — Regulatory Reports (RR-4, RR-8)</h3><span class="chip">Shipped · Dec 2020 — Oct 2022</span></div>
+    <div class="client">Chubb · Monterrey</div>
+    <p>End-to-end delivery of statutory RR-8 statistical and RR-4 solvency-capital reports to Mexico's insurance regulator, preventing government penalties.</p>
+    <ul>
+      <li>Defined and executed the RR-8 implementation strategy, securing sponsor authorization and budget</li>
+      <li>Improved data accuracy and delivery timelines for CNSF reports through UAT-driven early validation</li>
+      <li>Ran bi-weekly senior management reviews on progress, risks and deliverables</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>Scrum Master / PM — Customer 360 Personalization</h3><span class="chip">Shipped · Sep 2019 — Nov 2020</span></div>
+    <div class="client">Chubb · Monterrey</div>
+    <p>Customer View 360 platform unifying policy, claims and contact data to power retention, cross-sell and churn analytics.</p>
+    <ul>
+      <li>Coordinated Data Lake reconciliation, MDM data profiling, cleansing and standardization workstreams</li>
+      <li>Led QA of data quality and data counts across QA/UAT environments</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>Scrum Master / PM / Release Manager — IT Business Transactions Dashboard</h3><span class="chip">Shipped · Mar 2019 — Aug 2019</span></div>
+    <div class="client">Chubb · Monterrey</div>
+    <p>Real-time Qlik Sense dashboard of transactions, quotes and policy issuance across platforms.</p>
+    <ul>
+      <li>Delivered the dashboard end to end: scope, data structures, QVD loads, security groups, QA and publication</li>
+      <li>Managed REQ/CHG workflows in ServiceNow and peer-review release approvals</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><h3>Sr. Scrum Master / PM — Digitization of Complaints &amp; Installations · Plant Systems Interconnection</h3><span class="chip">Shipped · Jun 2014 — Feb 2019</span></div>
+    <div class="client">Teléfonos de México (Telmex) · Mexico City</div>
+    <p>Two multi-year programs: digitizing customer complaint/installation service under federal telecom regulation, and interconnecting internal and outside plant systems to improve service at national scale.</p>
+    <ul>
+      <li>Delivered digitized reporting in the Pisa Plex platform aligned to IFT regulatory SLAs (24h/72h complaints, 7-day installs)</li>
+      <li>Managed backlog, estimation and QA test matrices for high-volume operational systems</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="sec-head"><span class="mono" style="color:var(--accent)">03</span><h2>Skills &amp; toolset</h2></div>
+  <div class="skill-cols">
+    <div class="skill-card"><h3>Methodologies</h3>
+      <div class="tags"><span>Scrum</span><span>SAFe 6</span><span>Kanban</span><span>Scrumban</span><span>ITIL</span><span>CI/CD</span><span>Six Sigma (YB)</span><span>TDD / ATDD</span><span>PI Planning</span><span>Release &amp; Change Mgmt</span></div>
+    </div>
+    <div class="skill-card"><h3>Tools</h3>
+      <div class="tags"><span>Jira</span><span>Confluence</span><span>ServiceNow</span><span>Azure DevOps</span><span>Rally</span><span>Trello</span><span>HP Quality Center</span><span>GitHub</span><span>Qlik Sense</span><span>MS Project</span><span>SharePoint</span></div>
+    </div>
+    <div class="skill-card"><h3>What I bring</h3>
+      <div class="tags"><span>Servant leadership</span><span>Facilitation of Scrum events</span><span>Problem solving</span><span>Communication</span><span>Team coaching</span><span>Information radiators (metrics &amp; dashboards)</span><span>Bottleneck &amp; impediment removal</span><span>ART / cross-team support</span><span>Continuous improvement</span><span>Stakeholder management</span><span>Risk &amp; escalation</span><span>CAB / compliance</span><span>UAT coordination</span><span>Backlog health</span><span>AI-empowered delivery</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="certifications"><div class="wrap">
+  <div class="sec-head"><span class="mono" style="color:var(--accent)">04</span><h2>Certifications &amp; training</h2></div>
+  <table class="cert-table">
+    <tr><th>Credential</th><th>Issuer</th><th>ID</th></tr>
+    <tr><td>Certified AI-Empowered SAFe 6 Scrum Master (SSM 6.0)</td><td>Scaled Agile</td><td class="mono" style="text-transform:none">90350197-6614</td></tr>
+    <tr><td>AI-Empowered SAFe Scrum Master Course</td><td>Scaled Agile</td><td class="mono" style="text-transform:none">83927193-9092</td></tr>
+    <tr><td>Claude Code Mastery — Foundation Training</td><td>Anthropic</td><td class="mono" style="text-transform:none">FN-2026-P49GH2EZ</td></tr>
+    <tr><td>Claude Code Greenfield Training — Project Manager Track</td><td>Anthropic</td><td class="mono" style="text-transform:none">GF-2026-YASTD3AY</td></tr>
+    <tr><td>Scrum Master Professional Certificate (SMPC)</td><td>CertiProf</td><td class="mono" style="text-transform:none">71560069</td></tr>
+    <tr><td>Scrum Master Accredited Certification (SMAC)</td><td>Scrum Institute</td><td class="mono" style="text-transform:none">1159321213140</td></tr>
+    <tr><td>Kanban Essentials Certified</td><td>VMEdu</td><td class="mono" style="text-transform:none">1170528</td></tr>
+    <tr><td>Agile Project Management</td><td>Google Career Certificates (Coursera)</td><td>—</td></tr>
+    <tr><td>Six Sigma Yellow Belt</td><td>ScrumStudy</td><td class="mono" style="text-transform:none">836912</td></tr>
+    <tr><td>Scrum Fundamentals Certified (SFC)</td><td>ScrumStudy</td><td class="mono" style="text-transform:none">865072</td></tr>
+    <tr><td>Managerial Skills Diploma</td><td>Käser Training International (Mexico)</td><td>—</td></tr>
+    <tr><td>ESL Program Diploma</td><td>University of Washington, Seattle</td><td>—</td></tr>
+  </table>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="sec-head"><span class="mono" style="color:#8FE0C8">05</span><h2>Let's deliver something</h2></div>
+  <p>If you need someone who can take a complex, regulated program from backlog to production — on time and audit-clean — I'd love to talk.</p>
+  <a class="big" href="mailto:jglibien@live.com">jglibien@live.com</a>
+  <div class="meta">Phone / WhatsApp: +52 462 328 8102 · Mexico · Available for remote and on-site engagements</div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Jose Farid Guerrero Libien · Built as a living release log of my work.</div></footer>
+
+</body>
+</html>
